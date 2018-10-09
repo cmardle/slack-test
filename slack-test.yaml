@@ -5,8 +5,8 @@
 
     - name: Send notification message via Slack (slack module method)
       slack:
-        token: {{ API_token }}"
-        channel: {{ slack_channel }}
+        token: "{{ API_token }}"
+        channel: "{{ slack_channel }}"
         msg: {"attachments": [
             {"title": "Test Notification"
             ,"color": "good"
