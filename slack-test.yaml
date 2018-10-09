@@ -7,7 +7,7 @@
       slack:
         token: "{{ API_token }}"
         channel: "{{ slack_channel }}"
-        msg: {"attachments": [
-            {"title": "Test Notification"
-            ,"color": "good"
-            ,"text": "Hello World!"}]}
+        attachments:
+          - text: 'Hello World!'
+            color: 'good'
+            title: 'Test Notification'
